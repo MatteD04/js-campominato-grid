@@ -55,21 +55,19 @@ img{
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    border: 1px solid black;
 }
 
 .square {
     width: calc(100% / 10);
     height: calc(100% / 10);
-    background-color: cadetblue;
-    border: 2px solid black;
-    font-size: 30px;
+    border: 1px solid black;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.square.click{
-    background-color: lightblue;
+.square.clicked{
+    background-color: rgb(70, 209, 255);
 }
 
 /*FOOTER*/
