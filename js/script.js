@@ -4,20 +4,19 @@
 //Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro 
 //ed emetto un messaggio in console con il numero della cella cliccata.
 
+const mainGrid = document.querySelector('#grid');
+console.log(mainGrid);
 //al click sul bottone genero la griglia
 const btnPlay = document.querySelector('#btn');
 btnPlay.addEventListener('click', function() {
+    mainGrid.innerHTML = '';
+
     for(let i = 1; i <= 100; i++) {
         const newSquare = generateSquare(i);
         mainGrid.append(newSquare);
     }
 })
-
-// per 100 volte creare un quadrato che aggiungo a grid
-const mainGrid = document.querySelector('#grid');
-console.log(mainGrid);
-
-    
+ 
 // Funzione che genera un quadrato
 // number -> rappresenta il numero
 // return: elemento del dom che rappresenta un quadrato
